@@ -1,0 +1,182 @@
+<!-- Topbar Start -->
+<div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+  <div class="row gx-0">
+    <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+      <div class="d-inline-flex align-items-center">
+        <!-- <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours:周一至周六: 9:00am - 9:00 pm, 週日公休</small> -->
+      </div>
+    </div>
+    <div class="col-md-6 text-center text-lg-end">
+      <div
+        class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5"
+      >
+        <div class="me-3 pe-3 border-end py-2">
+          <p class="m-0">
+            <i class="fa fa-envelope-open me-2"></i>projyokult@example.com
+          </p>
+        </div>
+        <div class="py-2">
+          <p class="m-0"><i class="fa fa-phone-alt me-2"></i>(02)23456789</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<nav
+  class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0"
+>
+  <a href="index.html" class="navbar-brand p-0">
+    <h1 class="m-0 text-primary">
+      <img id="LOGO" src="img/LOGO.png" alt="Logo" />牙樂多
+    </h1>
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+      <!-- 連結的部分最後還要再更改 -->
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          >診所介紹</a
+        >
+        <div class="dropdown-menu m-0">
+          <a href="clinic.html" class="dropdown-item">環境介紹</a>
+          <a href="device.html" class="dropdown-item">設備介紹</a>
+        </div>
+      </div>
+
+      <a href="team.html" class="nav-item nav-link">醫療團隊</a>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          >預約看診</a
+        >
+        <div class="dropdown-menu m-0">
+          <a href="patientBooking.html" class="dropdown-item">預約門診時間</a>
+          <a href="patientChartQuery.html" class="dropdown-item"
+            >就診紀錄查詢</a
+          >
+          <a href="patientBookingQuery.html" class="dropdown-item">預約查詢</a>
+          <a href="patientNowNum.html" class="dropdown-item">看診進度</a>
+          <a href="patienCheckIn.html" class="dropdown-item">就診報到</a>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          >購物商城</a
+        >
+        <div class="dropdown-menu m-0">
+          <a href="shopping.html" class="dropdown-item">商品列表</a>
+          <!-- <a href="shopping_cart.html" class="dropdown-item">購物車</a> -->
+          <a href="shopping_checkout.html" class="dropdown-item">結帳資訊</a>
+        </div>
+      </div>
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          >募資平台</a
+        >
+        <div class="dropdown-menu m-0">
+          <a href="fundraising_AboutPlatform.html" class="dropdown-item"
+            >關於募資</a
+          >
+          <a href="fundraising_AllProposal.html" class="dropdown-item"
+            >所有募資</a
+          >
+          <a href="fundraising_ContributionRecord.html" class="dropdown-item"
+            >募資紀錄</a
+          >
+        </div>
+      </div>
+      <a href="healtharticlelist.html" class="nav-item nav-link">衛教專欄</a>
+    </div>
+    <!-- <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">小幫手<i class="fa-solid fa-comment-dots"></i></a> -->
+    <div class="nav-item">
+      <a href="shopping_cart.html" class="nav-item nav-link">
+        <i class="fa-solid fa-cart-shopping"></i>購物車
+      </a>
+    </div>
+    <div class="nav-item" id="memberSign">
+      <!--JavaScript-->
+    </div>
+
+    <div class="nav-item" id="logout">
+      <a
+        href="#"
+        class="nav-item nav-link"
+        data-bs-toggle="modal"
+        data-bs-target="#searchModal"
+        >登出<i class="fa-solid fa-arrow-right-from-bracket"></i
+      ></a>
+    </div>
+    <!-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa-solid fa-circle-user"></i>登入</button> -->
+  </div>
+</nav>
+<!-- Navbar End -->
+<!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-header border-0">
+      <button
+        type="button"
+        class="btn bg-white btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+        id="btn-modal-close"
+      ></button>
+    </div>
+    <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+      <div class="modal-body d-flex align-items-center justify-content-center">
+        <div class="input-group" style="max-width: 600px">
+          <p class="form-control border-primary p-3" id="login-message">
+            <!-- JavaScript -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Full Screen Search End -->
+<script>
+  if (sessionStorage.getItem("memID")) {
+    console.log("getSession");
+    $("#memberSign").append(`
+      <a
+      href="memberCenter.html"
+      class="nav-item nav-link"
+  >
+      <i class="fa-solid fa-circle-user"></i>會員中心
+  </a>`);
+  } else {
+    console.log("NoSession");
+    $("#memberSign").append(`
+      <a
+      href="memberLogin.html"
+      class="nav-item nav-link"
+  >登入<i class="fa-solid fa-arrow-right-to-bracket"></i>
+  </a>`);
+  }
+  $("#logout").on("click", () => {
+    if (sessionStorage.getItem("token")) {
+      document.getElementById(
+        "login-message"
+      ).innerText = `登出成功，歡迎下次再來。`;
+      sessionStorage.removeItem("token");
+      sessionStorage.removeItem("memID");
+      setTimeout(() => {
+        window.location.replace("index.html");
+      }, 3000);
+    } else {
+      document.getElementById("login-message").innerText = `請先登入，謝謝。`;
+    }
+  });
+</script>

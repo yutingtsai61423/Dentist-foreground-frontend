@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DentCare - Dental Clinic Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <script src="https://kit.fontawesome.com/4be45006bc.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fundrasing.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--注意順序-->
+    <!--用javascript引入header-->
+    <div id="header">header</div>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-4 hero-header">  <!-- mb-5"> -->
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-7 text-white animated zoomIn" style="margin-top: 10px;">募資紀錄</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Appointment Start -->
+    <div class="container-fluid mb-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 10px;">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-2 py-5" style="padding-bottom: 10px; margin-top: 15px;">
+                    <div style="text-align: center; font-size: 18px;">
+                        <a href="./fundraising_ContributionRecord.html" style="color: rgb(90, 90, 90); font-weight: bolder;">募資紀錄</a>
+                        <hr>
+                        <a href="./fundraising_NewProposal.html" style="color: rgb(90, 90, 90);">我要提案</a>
+                        <hr>
+                        <a href="./fundraising_MyProposal.html" style="color: rgb(90, 90, 90);">我的提案</a>
+                    </div>
+                </div>
+                <div class="col-lg-10" style="padding-left:0px; padding-right:0px; border-left: 1px solid gray;">
+                    <div id="tables" class="appointment-form d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
+                        <!-- <table>
+                            <thead>
+                                <tr>
+                                    <td class="column">專案名稱</th>
+                                    <td class="column" style="width: 70px;">出貨進度</th>
+                                    <td class="column" style="width: 100px;">預計到貨時間</th>
+                                    <td class="column" style="width: 90px;">購買日期</th>
+                                    <td class="column" style="width: 100px;">發票號碼</th>
+                                    <td class="column" style="width: 80px;">訂單編號</th>
+                                    <td class="column" style="width: 70px;">金額</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders">
+                            
+                            </tbody>
+                        </table> -->
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+    
+
+    <!-- Newsletter Start -->
+    <!-- <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- Newsletter End -->
+    
+
+    <!--注意順序-->
+    <!--用javascript引入footer-->
+    <div id="footer">footer</div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- 外部參考 header, footer -->
+    <script type="text/javascript">
+        //在js中引入
+        // $(document).ready(function () {
+        // $(document).ready(function () {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        // });
+    </script>
+
+
+    <script>
+        $(document).ready(() => {
+
+            $.ajax({
+                url: "http://localhost:8080/yokult/fundraising/ProposalGetMyOrder", // 資料請求的網址
+                type: "POST", // GET | POST | PUT | DELETE | PATCH
+                // data: jsondata, // 將物件資料(不用雙引號) 傳送到指定的 url
+                dataType: "json",             // 預期會接收到回傳資料的格式： json | xml | html
+                processData: false,
+                contentType: "application/json",
+                timeout: 0, // request 可等待的毫秒數 | 0 代表不設定 timeout
+                beforeSend: function () {;
+                    // 在 request 發送之前執行
+                },
+                headers: {
+                    // request 如果有表頭資料想要設定的話
+                    // "X-CSRF-Token":"abcde"   // 參考寫法
+                },
+                statusCode: {
+                    // 狀態碼
+                    200: function (res) {},
+                    404: function (res) {},
+                    500: function (res) {},
+                },
+                success: function (data) {
+                    console.log(data);
+
+                    let dataPart = data.Proposal;
+                    let allProposals = data.Proposals;
+                    let allPlans = data.Plans;
+                    let allOrders = data.Orders;
+                    console.log(allProposals);
+                    console.log(allPlans);
+                    console.log(allOrders);
+
+                    //四捨五入公式
+                    let roundDecimal = function (val, precision) {
+                        return Math.round(Math.round(val * Math.pow(10, (precision || 0) + 1)) / 10) / Math.pow(10, (precision || 0));
+                    }
+                    //數字加逗號
+                    let addComma = function separator(numb) {
+                        var str = numb.toString().split(".");
+                        str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        return str.join(".");
+                    }
+
+                    for(var i=0; i<allProposals.length; i++){
+                        let joProposal = allProposals[i];
+                        let joPlan = allPlans[i];
+                        let joOrder = allOrders[i];
+                        console.log(joProposal);
+                        console.log(joPlan);
+                        console.log(joOrder);
+
+                        //proposal部分
+                        let proposalID = joProposal.proposalID;
+                        let proposalName = joProposal.proposalName;
+                        
+
+                        //選項
+                        // let hideBox = "hideBox";
+                        // let templete_first = `<option selected="selected" value="${proposalID}">${proposalName}</option> `;
+                        // let templete_other = `<option          value="${proposalID}">${proposalName}</option> `;
+                        // if(i == 0){
+                        //     $('#proposalSelect').append(templete_first);
+                        //     hideBox = "";
+                        // }else{
+                        //     $('#proposalSelect').append(templete_other);
+                        // }
+
+                        let proposalStartedDateTime = joProposal.proposalStartedDateTime;
+                        let proposalEndedDateTime = joProposal.proposalEndedDateTime;
+                        let currentMillis = joProposal.currentMillis;
+                        let proposalStartedDateTimeMillis = joProposal.proposalStartedDateTimeMillis;
+                        let proposalEndedDateTimeMillis = joProposal.proposalEndedDateTimeMillis;
+                        let restDay = roundDecimal( (proposalEndedDateTimeMillis - proposalStartedDateTimeMillis)/1000/60/60/24 );
+
+                        let proposalPage = `./fundraising_proposal-${proposalID}.html`;
+
+                        let proposalGoal = joProposal.proposalGoal;
+                        let proposalAmount = joProposal.proposalAmount;
+                        let amountPercent = addComma(roundDecimal(proposalAmount / proposalGoal *100 , 1)) + '%';
+                        let showBarPercent;
+                        let status;
+                        let showStatusText;
+
+                        if(proposalAmount / proposalGoal >= 1){
+                            showBarPercent = 100;
+                        }else{
+                            showBarPercent = Math.round((proposalAmount / proposalGoal)*100);                    }
+
+                        if(currentMillis < proposalStartedDateTimeMillis){
+                            proposalGoal = "";
+                            proposalAmount = "";
+                            amountPercent = "";
+                            status = "敬請期待";
+                            showStatusText = "尚未開始";
+                        }else if(currentMillis <= proposalEndedDateTimeMillis){
+                            if(proposalAmount >= proposalGoal){
+                                status = "已達標";
+                            }else{
+                                status = "尚未達標";
+                            }
+                            amountPercent = addComma(roundDecimal(proposalAmount / proposalGoal *100 , 1)) + '%';
+                            showStatusText = "募資中";
+                        }else{
+                            if(proposalAmount >= proposalGoal){
+                                status = "已達標";
+                            }else{
+                                status = "未達標";
+                            }
+                            amountPercent = addComma(roundDecimal(proposalAmount / proposalGoal *100 , 1)) + '%';
+                            showStatusText = "已結束";
+                        }
+                        
+                        //plan部分
+                        let planName = joPlan.planName;
+                        let planAmount = joPlan.planAmount;
+                        let planContent = joPlan.planContent;
+                        let planPostNote = joPlan.planPostNote;
+                        let planPostDate = joPlan.planPostDate;
+                        let planStartedDateTime = joPlan.planStartedDateTime;
+                        let planEndedDateTime = joPlan.planEndedDateTime;
+                        let planStartedDateTimeMillis = joPlan.planStartedDateTimeMillis;
+                        let planEndedDateTimeMillis = joPlan.planEndedDateTimeMillis;
+                        let planPurchases = joPlan.planPurchases;
+
+                        let planStatus;
+                        let postProcess = "起始資訊";
+                        if(currentMillis < proposalStartedDateTimeMillis){
+                            planStatus = "尚未開始";
+                        }else if(currentMillis <= proposalEndedDateTimeMillis){
+                            if(currentMillis < planStartedDateTimeMillis){
+                                planStatus = "尚未開始";
+                            }else if(currentMillis <= planEndedDateTimeMillis){
+                                planStatus = "募資中";
+                                postProcess = "募資中";
+                            }else{
+                                planStatus = "已結束";
+                                if(currentMillis < planPostDate){
+                                    postProcess = "處理中";
+                                }else if(currentMillis <= planPostDate + 86400000 * 14 ){
+                                    postProcess = "寄送中";
+                                }else{
+                                    postProcess = "已完成";
+                                }
+                            }
+                        }else{
+                            planStatus = "已結束";
+                            postProcess = "已完成";
+                        }
+
+                        if(planName == "純贊助"){
+                            planPostDate = "-";
+                        }
+
+                        //order部分
+                        let orderID = joOrder.orderID;
+                        let orderInvoiceNumber = joOrder.orderInvoiceNumber;
+                        let orderDateTime = joOrder.orderDateTime;
+                        let orderAmount = joOrder.orderAmount;
+
+                        let orderDate = orderDateTime.substring(0, 10);
+                        let orderTime = orderDateTime.substring(11, 19);
+                        orderDateTime = orderDate + "\n" + orderTime;
+
+
+
+                        //加逗號
+                        if(proposalGoal != ""){
+                            proposalGoal = addComma(proposalGoal);
+                        }
+                        if(proposalAmount != ""){
+                            proposalAmount = addComma(proposalAmount);
+                        }
+                        if(planAmount != ""){
+                            planAmount = addComma(planAmount);
+                        }
+                        let gap = "";
+                        if(i != 0){
+                            gap = "margin-top: 5px";
+                        }
+                        let html_tables = `
+                            <table id="proposal-${proposalID}" style="${gap}">
+                                <thead>
+                                    <tr>
+                                        <td class="column">專案名稱</th>
+                                        <td class="column" style="width: 70px;">募資進度</th>
+                                        <td class="column" style="width: 100px;">預計到貨時間</th>
+                                        <td class="column" style="width: 90px;">購買日期</th>
+                                        <td class="column" style="width: 100px;">發票號碼</th>
+                                        <td class="column" style="width: 80px;">訂單編號</th>
+                                        <td class="column" style="width: 70px;">金額</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="orders-${proposalID}">
+                                
+                                </tbody>
+                            </table>
+                        `;
+                        let html_propsals = `
+                            <tr>
+                                <td class="text-title"><a href="${proposalPage}">${proposalName}</a></td>
+                                <td class="td-empty" colspan="6"></td>
+                            </tr>
+                        `;
+                        let html_orders = `
+                            <tr>
+                                <td class="text-project"><a href="${proposalPage}">${planName}</a></td>
+                                <td>${postProcess}</td>
+                                <td>${planPostDate}</td>
+                                <td>${orderDateTime}</td>
+                                <td>${orderInvoiceNumber}</td>
+                                <td>${orderID}</td>
+                                <td>${planAmount}</td>
+                            </tr>
+                        `;
+                        if(i == 0 ){
+                            $(`#tables`).append(html_tables);
+                            $(`#orders-${proposalID}`).append(html_propsals);
+                            $(`#orders-${proposalID}`).append(html_orders);
+                        }else{
+                            if(allProposals[i].proposalName == allProposals[i-1].proposalName){
+                                $(`#orders`).append(html_orders);
+                            }else{
+                                $(`#tables`).append(html_tables);
+                                $(`#orders-${proposalID}`).append(html_propsals);
+                                $(`#orders-${proposalID}`).append(html_orders);
+                            }
+                        }
+
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    }
+                    
+
+                    console.log("Success");  
+                },
+                error: function (a,b,c) {
+                    console.log(a.responseText);
+                    console.log(b);
+                    console.log(c);
+                    // request 發生錯誤的話執行
+                    console.log("Error");
+                },
+                complete: function (xhr) {
+                    // request 完成之後執行(在 success / error 事件之後執行)
+                    console.log("Complete");
+                },
+            });
+        })
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>DentCare - Dental Clinic Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Free HTML Templates" name="keywords" />
+        <meta content="Free HTML Templates" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <!-- 我的CSS載入 -->
+        <link href="css/all_style.css"   rel="stylesheet"/>
+
+        <!-- 我的JS -->
+        <script src="js/materialize.js"></script>
+
+    </head>
+
+    <body>
+     <header id="header"></header>
+
+<!-- 我自己的header連結 -->
+<!--        <div class="nav-item dropdown">
+            <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >掛號系統</a
+            >
+            <div class="dropdown-menu m-0">
+                <a href="patientBooking.html" class="dropdown-item"
+                    >預約門診時間</a
+                >
+                <a href="patientbBookingQuery.html" class="dropdown-item"
+                    >預約查詢</a
+                >
+                <a href="patientCheckIn.html" class="dropdown-item">看診報到</a
+                    >
+                <a href="patientNowNum.html" class="dropdown-item"
+                    >看診進度</a
+                    >
+                <a href="patientChartQuery.html" class="dropdown-item"
+                        >就診紀錄查詢</a
+                    >
+            </div>
+        </div>
+-->
+        <!-- Main content 從這邊開始改-->
+            
+        <!-- 中間夾Hero Start -->
+        <div class="container-fluid bg-primary py-5 hero-header mb-5">
+            <div class="row py-3">
+                <div class="col-12 text-center">
+                    <h1 class="display-3 text-white animated zoomIn">就診報到</h1>
+                    <!-- <a href="" class="h4 text-white">首頁</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h4 text-white">Services</a> -->
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- 報到 Start -->
+        <form method="post" action="#">
+            <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row g-5" style="justify-content: center;">
+                        <div class="col-lg-5" style="width:600px;">
+ 
+                            <!-- <div class="row g-3"> -->
+                                
+                                <!-- QRCODE -->
+                                <!-- <div id="QRcodeDiv" class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                                    <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>掃描QRcode報到</h5>
+                                    <img class="QRCODE" data-wow-delay="0.9s" src="img/QRCODE.png" style="width: 170px">
+                                    <a  class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">視訊看診報到入口</a>                             
+
+                                </div> -->
+                                <!-- /QRCODE -->
+                                <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                                    <div class="section-title mb-4" >
+                                        <h5 class="position-relative d-inline-block text-primary text-uppercase">就診報到</h5>
+                                        <h5 class="display-6 mb-0">現場看診報到</h5>
+                                    </div>
+                                    <h4 class="text-body fst-italic mb-4">請選擇一種報到方式</p>
+                                    <div class="col-12">
+                                        <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>輸入身分證報到</h5>
+                                        <br>
+                                        <input type="text" class="Idcard form-control border-0 bg-light px-3" placeholder="請輸入身分證字號" style="height: 55px;width: 90%;" >
+                                        <br><br><br>
+                                        <a class="checkIn btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">現場就診報到入口</a>
+                                        <!-- a標籤綁定click事件 選擇到form表單呼叫.submit()方法 -->
+
+                                    </div>
+
+                                </div>
+                            <!-- </div>       -->
+
+                        </div>
+                        <div class="col-lg-5" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- 報到 End -->
+        <!-- 燈箱 -->
+            <div class="overlay">
+                <article>
+                    <h1></h1>
+                    <p></p>
+                    <button type="button" class="btn_modal_close ">確認</button>
+                </article>
+            </div>
+        
+    
+        
+        <!-- Main content 到這邊結束 -->
+        
+        <div class="space"></div><!-- 間隔佔位用 -->
+
+           <footer id="footer"></footer>
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="lib/twentytwenty/jquery.event.move.js"></script>
+        <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Vicky's js -->
+        <script src="js/patientCheckInJs.js"></script>
+    </body>
+</html>

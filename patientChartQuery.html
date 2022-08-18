@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DentCare - Dental Clinic Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- 我的CSS載入 -->
+    <link href="css/all_style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <!-- Main content 從這邊開始改-->
+
+    <!-- 中間夾Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+      <div class="row py-3">
+        <div class="col-12 text-center">
+          <h1 class="display-3 text-white animated zoomIn">就診紀錄查詢</h1>
+          <!-- <a href="" class="h4 text-white">首頁</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h4 text-white">Services</a> -->
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- 查詢資訊填寫開始 -->
+    <div
+      class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+      style="width: 800px; margin: auto"
+      data-wow-delay="0.6s"
+    >
+      <h1 class="text-white mb-4">請選擇就診紀錄查詢資料</h1>
+      <form method="post" action="#">
+        <!-- <div class="row g-3" >
+                    <div class="col-12 col-sm-6">
+                        <input type="text" name="IDcard" class="form-control bg-light border-0" placeholder="請輸入您的身分證字號" style="height: 55px;">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                    </div>
+                    
+                    
+                </div> -->
+        <!-- 下拉選單 -->
+        <div class="row g-3">
+          <div class="col-12 col-sm-6">
+            <select
+              class="chart form-select bg-light border-0"
+              style="height: 55px"
+            >
+              <option selected>請選擇看診日期</option>
+            </select>
+          </div>
+          <!-- 如果想加入醫師查詢 交互查詢  就要搭配長的按鈕 -->
+          <!-- <div class="col-12 col-sm-6">
+            <select class="form-select bg-light border-0" style="height: 55px">
+              <option selected>選擇看診醫師</option>
+              <option value="1">Service 1</option>
+              <option value="2">Service 2</option>
+              <option value="3">Service 3</option>
+            </select>
+          </div> -->
+          <!-- 短的按鈕 -->
+          <div class="col-6">
+            <button class="chartQuery btn btn-dark w-100 py-3" type="button">
+              按我查詢
+            </button>
+          </div>
+
+          <!-- 長的按鈕 -->
+          <!-- <div class="col-12">
+            <button class="btn btn-dark w-100 py-3" type="button">
+              按我查詢
+            </button>
+          </div> -->
+        </div>
+        <!-- 看診醫師與就診紀錄內容結束 -->
+      </form>
+    </div>
+    <!-- 查詢資訊填寫結束 -->
+    <!-- 查詢結果顯示 -->
+    <!-- Input addon -->
+    <div class="card card-info" style="width: 800px; margin: 40px auto">
+      <div class="card-header">
+        <h3 class="card-title">查詢結果</h3>
+      </div>
+      <div class="card-body">
+        <div class="col-12">
+          <input
+            type="text"
+            class="drName form-control border-0 bg-light px-4"
+            placeholder="看診醫師"
+            style="height: 55px"
+            readonly
+          />
+        </div>
+        <br />
+        <div class="col-12">
+          <textarea
+            class="textareaChart form-control border-0 bg-light px-4 py-3"
+            rows="5"
+            placeholder="就診紀錄內容"
+            style="resize: none"
+            readonly
+          ></textarea>
+        </div>
+        <!-- 看診醫師與就診紀錄內容 結束 -->
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+    <!-- 查詢結果結束 -->
+    <!-- Main content 到這邊結束 -->
+
+    <div class="space"></div>
+    <!-- 間隔佔位用 -->
+    <footer id="footer"></footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- VickyTsai's JS -->
+    <script src="js/materialize.js"></script>
+    <script src="js/patirntChartQueryJs.js"></script>
+  </body>
+</html>

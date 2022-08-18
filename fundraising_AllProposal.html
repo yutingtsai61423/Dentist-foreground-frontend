@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DentCare - Dental Clinic Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <script src="https://kit.fontawesome.com/4be45006bc.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--注意順序-->
+    <!--用javascript引入header-->
+    <div id="header">header</div>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-4 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-7 text-white animated zoomIn" style="margin-top: 10px;">募資提案</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Select Options Start -->
+    <div style="padding-right: 8%; flex-wrap: wrap  ; display: flex; justify-content: right;">
+        <span style="padding-right: 5px;">專案類別</span>
+        <form action="" >
+            <select name="category" id="category">
+                <option value="All">所有提案</option>
+                <option value="CleanTool">潔牙物品</option>
+                <option value="Orthodontics">牙齒矯治</option>
+                <option value="Charity">公益活動</option>
+                <option value="HealthEducation">衛教出版</option>
+                <option value="Favorite">我的最愛</option>
+            </select>
+        </form>
+        <span style="padding-left: 10px; padding-right: 10px;">|</span>
+
+        <span style="padding-right: 5px;">專案階段</span>
+        <form action="" >
+            <select name="status" id="status">
+                <option value="Choice">所有階段</option>
+                <option value="Fundraising">募資中</option>
+                <option value="Completed">已結束</option>
+                <option value="ComingSoon">即將開始</option>
+            </select>
+        </form>
+        <span style="padding-left: 10px; padding-right: 10px;">|</span>
+
+        <span style="padding-right: 5px;">專案排序</span>
+        <form action="" >
+            <select name="sortby" id="sortby">
+                <option value="Hot">熱門</option>
+                <option value="StartTime">開始時間</option>
+                <option value="EndTime">結束時間</option>
+            </select>
+        </form>
+    </div>
+    <!-- Select Options End -->
+
+    
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div id="MainArea" class="row g-5">
+
+                <!-- <div class="category-Fundrasing col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s" >
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <a href="propsal-page1.html">
+                                <img class="img-fluid rounded-top w-100" src="clinic\img\fundraising\proposal-1\Thumbnail_main_XXX.jpg" alt="">
+                            </a>
+                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="javascript:void(0);">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-left rounded-bottom p-4">
+                            <p style="margin: 0;">已達標</p>
+                            <p class="text-primary mb-0" style="font-size: small;">社團法人中華民國牙醫師公會全國聯合會</p>
+                            <a href="propsal-page1.html">
+                                <h4 class="mb-2 h5">偏鄉牙醫志工團｜為偏鄉學童巡迴牙齒健檢</h4>
+                            </a>
+                            <div style="margin-top: 15px; height: 4px; background-color: gray;">
+                                <div style="height: 4px; width: 100%; background: lightcoral"></div>
+                            </div>
+
+                            <p style="margin: 0; font-size: small; display: inline;">$ 100,000,000</p>
+                            <div style="display: inline;"> | </div>
+                            <p style="margin: 0; font-size: small; display: inline;">330%</p>
+                            <p style="margin: 0; font-size: small; display: inline; float:right;">已結束</p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+    
+
+    <!-- Newsletter Start -->
+    <!-- <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- Newsletter End -->
+    
+
+    <!--注意順序-->
+    <!--用javascript引入footer-->
+    <div id="footer">footer</div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- 外部參考 header, footer -->
+    <script type="text/javascript">
+        //在js中引入
+        // $(document).ready(function () {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        // });
+    </script>
+
+    <!-- 愛心切換 -->
+    <script>
+        $("i.fa-solid fa-heart")
+        $('.fa-solid').each(function(index, item) {
+            $(item).on('click', function(){
+                $(this).toggleClass("fa-solid");
+                $(this).toggleClass("fa-regular");
+            })
+        })  
+        $('.fa-regular').each(function(index, item) {
+            $(item).on('click', function(){
+                $(this).toggleClass("fa-solid");
+                $(this).toggleClass("fa-regular");
+            })
+        })       
+    </script>
+
+    <script>
+        $(document).ready(() => {
+            //生成json
+			// var json = [];
+            // var j = {};
+			// j.table = "Proposal";
+			// j.action = "GetAll";
+			// json.push(j);
+			// var jsondata = JSON.stringify(json);
+            $.ajax({
+                url: "http://localhost:8080/yokult/fundraising/ProposalGetAll", // 資料請求的網址
+                type: "POST", // GET | POST | PUT | DELETE | PATCH
+                //data: jsondata, // 將物件資料(不用雙引號) 傳送到指定的 url
+                dataType: "json",             // 預期會接收到回傳資料的格式： json | xml | html
+                processData: false,
+                contentType: "application/json",
+                timeout: 0, // request 可等待的毫秒數 | 0 代表不設定 timeout
+                beforeSend: function () {
+                    // 在 request 發送之前執行
+                },
+                headers: {
+                    // request 如果有表頭資料想要設定的話
+                    // "X-CSRF-Token":"abcde"   // 參考寫法
+                },
+                statusCode: {
+                    // 狀態碼
+                    200: function (res) {},
+                    404: function (res) {},
+                    500: function (res) {},
+                },
+                success: function (jsObject) {
+                    console.log(jsObject);
+                    console.log(jsObject.Proposals);
+
+                    //四捨五入公式
+                    let roundDecimal = function (val, precision) {
+                        return Math.round(Math.round(val * Math.pow(10, (precision || 0) + 1)) / 10) / Math.pow(10, (precision || 0));
+                    }
+                    //數字加逗號
+                    let addComma = function separator(numb) {
+                        var str = numb.toString().split(".");
+                        str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        return str.join(".");
+                        return numb;
+                    }
+
+                    //迴圈印出募資提案
+                    for(var i=0 ; i<jsObject.Proposals.length ; i++ ){
+                        let joProposal = jsObject.Proposals[i];
+                        let proposalID = joProposal.proposalID;
+
+                        let proposalPage = `./fundraising_proposal-${proposalID}.html`;
+                        let proposalPictureBase64 = joProposal.proposalPictureBase64;
+                        
+                        let proposalHostName = joProposal.proposalHostName;
+                        let proposalName = joProposal.proposalName;
+                        let currentMillis = joProposal.currentMillis;
+                        
+                        let proposalGoal = joProposal.proposalGoal;
+                        let proposalAmount = joProposal.proposalAmount;
+                        let amountPercent;
+                        let status;
+                        let fontawesome;
+                        let proposalStartedDateTimeMillis = joProposal.proposalStartedDateTimeMillis;
+                        let proposalEndedDateTimeMillis = joProposal.proposalEndedDateTimeMillis;
+                        let showStatusText;
+                        let backgroundColorBase;
+                        let backgroundColor;
+                        let showBarPercent;
+                        let pipe = " | ";
+                        if(proposalAmount / proposalGoal >= 1){
+                            showBarPercent = 100;
+                        }else{
+                            showBarPercent = Math.round((proposalAmount / proposalGoal)*100);
+                        }
+
+                        if(currentMillis < proposalStartedDateTimeMillis){
+                            proposalAmount = "";
+                            amountPercent = "";
+                            pipe = "";
+                            fontawesome = "fa-regular fa-face-surprise ";
+                            status = "敬請期待";
+                            showStatusText = "尚未開始";
+                            backgroundColorBase = "";
+                            backgroundColor = "background-color: rgb(250, 250, 220);";
+                        }else if(currentMillis <= proposalEndedDateTimeMillis){
+                            if(proposalAmount >= proposalGoal){
+                                fontawesome = "fa-regular fa-face-smile-wink ";      //與已結束相同圖案 !
+                                status = "已達標";
+                            }else{
+                                fontawesome = "fa-regular fa-face-rolling-eyes ";
+                                status = "尚未達標";
+                            }
+                            amountPercent = addComma(roundDecimal(proposalAmount / proposalGoal *100 , 1)) + '%';
+                            showStatusText = "募資中";
+                            backgroundColorBase = "bg-light";
+                            backgroundColor = "";
+                        }else{
+                            if(proposalAmount >= proposalGoal){
+                                fontawesome = "fa-regular fa-face-smile-wink ";      //與募資中相同圖案 !
+                                status = "已達標";
+                            }else{
+                                fontawesome = "fa-regular fa-face-dizzy ";
+                                status = "未達標";
+                            }
+                            amountPercent = addComma(roundDecimal(proposalAmount / proposalGoal *100 , 1)) + '%';
+                            showStatusText = "已結束";
+                            backgroundColorBase = "";
+                            backgroundColor = "background-color: rgb(220, 220, 220);";
+                        }
+                        // 加逗號
+                        if(proposalGoal != ""){
+                            proposalGoal = '目標：$' + addComma(proposalGoal);
+                        }
+                        if(proposalAmount != ""){
+                            proposalAmount = addComma(proposalAmount);
+                        }
+
+
+                        let html = `
+                                <div class="category-Fundrasing col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s" >
+                                    <div class="team-item">
+                                        <div class="position-relative rounded-top" style="z-index: 1;">
+                                            <a href="${proposalPage}">
+                                                <img class="img-fluid rounded-top w-100" src="data:image/png;base64, ${proposalPictureBase64}" alt="">
+                                            </a>
+                                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                                <a class="btn btn-primary btn-square m-1" href="javascript:void(0);">
+                                                    <i class="${fontawesome} fa-lg"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="team-text position-relative ${backgroundColorBase} text-left rounded-bottom p-4" style="${backgroundColor}">
+                                            <p style="margin: 0;">${status}</p>
+                                            <p class="text-primary mb-0" style="font-size: small;">${proposalHostName}</p>
+                                            <a href="${proposalPage}">
+                                                <h4 class="mb-2 h5">${proposalName}</h4>
+                                            </a>
+                                            <div style="margin-top: 15px; height: 4px; background-color: gray;">
+                                                <div style="height: 4px; width: ${showBarPercent}%; background: lightcoral"></div>
+                                            </div>
+
+                                            <p style="margin-top: 20px; display: inline; font-size: small; font-weight:bold;">$ ${proposalAmount}</p>
+                                            <div style="margin-top: 20px; display: inline; font-size: small; font-weight:bold;">${pipe}</div>
+                                            <p style="margin: 0; display: inline; font-size: small; font-weight:bold;">${amountPercent}</p>
+                                            <p style="margin-top: 5px; display: inline; font-size: small; font-weight:bold; float:right;">${showStatusText}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        $('#MainArea').append(html);
+
+                    }
+
+                    console.log("Success");
+                },
+                error: function (a,b,c) {
+                    console.log(a.responseText);
+                    console.log(b);
+                    console.log(c);
+                    // request 發生錯誤的話執行
+                    console.log("Error");
+                },
+                complete: function (xhr) {
+                    // request 完成之後執行(在 success / error 事件之後執行)
+                    console.log("Complete");
+                },
+            }); 
+        })
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
