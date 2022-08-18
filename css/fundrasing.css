@@ -1,0 +1,35 @@
+td.column{
+    border: 1px solid black;
+    color: black;
+    background-color: antiquewhite;
+    font-size: medium;
+    font-weight: bold;
+}
+tbody td.text-title{
+    border: 1px solid black;
+    color: black;
+    background-color: antiquewhite;
+    text-align: left;
+    padding-left: 10px;
+}
+tbody td.text-project{
+    border: 1px solid black;
+    color: black;
+    background-color: antiquewhite;
+    text-align: left;
+    padding-left: 30px;
+}
+tbody td.td-empty{
+    background-color: lightgray;
+
+}
+tbody tr.summary{
+    border-top: 4px solid black;
+    border-style: double;
+}
+tbody td{
+    border: 1px solid black;
+    color: black;
+    background-color: antiquewhite;
+    text-align: center;
+}
