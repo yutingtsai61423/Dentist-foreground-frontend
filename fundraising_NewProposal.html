@@ -385,7 +385,7 @@
                     <div class="col-sm-9">
                       <input
                         type="data"
-                        name="proposalContent"
+                        name="proposalSummary"
                         class="form-control bg-light border-0"
                         placeholder="內容摘要"
                         style="height: 55px"
@@ -394,7 +394,7 @@
                     </div>
                   </div>
 
-                  <!-- <div class="row g-2">
+                  <div class="row g-2">
                     <div
                       class="col-sm-2"
                       style="
@@ -407,26 +407,28 @@
                       <span class="mb-4 h6" style="display: inline; color: red"
                         >*</span
                       >
-                      <span class="h5 text-white">專案企劃書：</span>
+                      <span class="h5 text-white">提案網頁檔：</span>
                     </div>
                     <div class="col-sm-9">
                       <label
-                        class="form-control bg-light border-0"
+                        class="form-control border-0"
                         placeholder="Your Name"
-                        style="height: 55px; padding-right: 20px"
+                        style="height: 55px; padding-right: 20px; background-color: rgb(112, 206, 240);"
                       >
                         <input
+                          id="inputFile"
                           type="file"
-                          name="proposalFile"
-                          style="display: none"
+                          name="proposalHtmlContent"
+                          accept=""
+                          style="margin-top: 5px; float: left;"
                         />
-                        <i
+                        <!-- <i
                           class="fa-solid fa-paperclip fa-lg"
                           style="padding-top: 15px; float: right"
-                        ></i>
+                        ></i> -->
                       </label>
                     </div>
-                  </div> -->
+                  </div>
 
                   <div class="row g-2">
                     <div
@@ -608,16 +610,33 @@
     <script src="js/main.js"></script>
 
     <script>
-      $("#sendOut").on("click", () => {
+      $(document).ready(() => {
+        var getMemID = sessionStorage.getItem("memID");
+        console.log(getMemID);
+        if(getMemID == null){
+          alert("請先登入");
+          window.location.href="memberLogin.html";
+        }
+      });
+
+      $("#sendOut").on("click", ()=>{
         const formData = new FormData($("#newProposal")[0]);
-        formData.append("table","Proposal");
-        formData.append("action","Insert");
+
+        var getMemID = sessionStorage.getItem("memID");
+        formData.append("memID",getMemID);
+
+        
+
+        console.log(getMemID);
+        console.log(formData.get("proposalHtmlContent"));
+
+        
 
         $.ajax({
-          url: "../fundraising", // 資料請求的網址
-          type: "POST", // GET | POST | PUT | DELETE | PATCH
-          data: formData, // 將物件資料(不用雙引號) 傳送到指定的 url
-          //dataType: "json",             // 預期會接收到回傳資料的格式： json | xml | html
+          url: "http://localhost:8080/yokult/fundraising/ProposalInsert", // 資料請求的網址
+          type: "POST",                 // GET | POST | PUT | DELETE | PATCH
+          data: formData,               // 將物件資料(不用雙引號) 傳送到指定的 url
+          dataType: "json",             // 預期會接收到回傳資料的格式： json | xml | html
           processData: false,
           contentType: false,
           timeout: 0, // request 可等待的毫秒數 | 0 代表不設定 timeout

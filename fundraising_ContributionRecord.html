@@ -161,11 +161,26 @@
 
     <script>
         $(document).ready(() => {
+            var getMemID = sessionStorage.getItem("memID");
+            console.log(getMemID);
+            let json;
+            var j = {};
+            if(getMemID == null){
+            alert("請先登入");
+            window.location.href="memberLogin.html";
+            }else{
+                j.memID = getMemID;
+                json = JSON.stringify(j);
+            }
+            // j.memID = "TGA001";
+            // json = JSON.stringify(j);
+            console.log(json);
+
 
             $.ajax({
                 url: "http://localhost:8080/yokult/fundraising/ProposalGetMyOrder", // 資料請求的網址
                 type: "POST", // GET | POST | PUT | DELETE | PATCH
-                // data: jsondata, // 將物件資料(不用雙引號) 傳送到指定的 url
+                data: json,                   // 將物件資料(不用雙引號) 傳送到指定的 url
                 dataType: "json",             // 預期會接收到回傳資料的格式： json | xml | html
                 processData: false,
                 contentType: "application/json",

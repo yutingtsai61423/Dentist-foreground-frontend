@@ -1,7 +1,7 @@
 $(function () {
-  sessionStorage.setItem("account", "TGA001");
+  // sessionStorage.setItem("account", "TGA001");
   sessionStorage.setItem("memName", "吳小儒");
-  let memIdLogin = sessionStorage.getItem("account");
+  let memIdLogin = sessionStorage.getItem("memID");
   let memName = sessionStorage.getItem("memName");
 
   $("textarea.textareaChart").css(
