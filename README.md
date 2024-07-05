@@ -1,4 +1,4 @@
-# Yokult-foreground-frontend
+# Dentist-foreground-frontend
 * 牙樂多網站前台頁面
 * 個人負責部分：掛號系統
 * 亮點部分：
